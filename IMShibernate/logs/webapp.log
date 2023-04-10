@@ -528,3 +528,9 @@ This generated password is for development use only. Your security configuration
 2023-04-10 12:49:23.239 INFO  c.I.I.Service.StudentService - Created student with id: 452
 2023-04-10 12:49:51.295 INFO  c.I.I.Service.StudentService - Created student with id: 453
 2023-04-10 12:49:51.337 INFO  c.I.I.Service.StudentService - updated student with id: 453
+2023-04-10 12:55:30.588 INFO  c.I.I.Service.StudentService - get student with id: 202
+2023-04-10 12:55:44.227 INFO  c.I.I.Service.StudentService - get student with id: 302
+2023-04-10 12:57:50.661 INFO  c.I.I.Service.StudentService - get student with id: 403
+2023-04-10 12:58:02.506 INFO  c.I.I.Service.StudentService - Getting all student
+2023-04-10 12:58:16.097 INFO  c.I.I.Service.StudentService - get student with id: 403
+2023-04-10 12:58:42.231 INFO  c.I.I.Service.StudentService - get student with id: 403

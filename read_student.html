@@ -56,6 +56,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Image</th>
           </tr>
         </thead>
         <tbody>
@@ -92,12 +93,15 @@
       const idCell = document.createElement('td');
       const nameCell = document.createElement('td');
       const emailCell = document.createElement('td');
+      const imageCell = document.createElement('td');
       idCell.textContent = data.Stusentid;
       nameCell.textContent = data.Studentname;
       emailCell.textContent = data.Studentemail;
+      imageCell.textContent = data.imageName;
       row.appendChild(idCell);
       row.appendChild(nameCell);
       row.appendChild(emailCell);
+      row.appendChild(imageCell);
       table.appendChild(row);
       })
       .catch((error) => {
