@@ -1,0 +1,127 @@
+2023-04-09 08:52:23.727 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1d6h57m28s996ms562µs600ns).
+2023-04-09 08:53:12.671 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s219ms614µs800ns).
+2023-04-09 10:48:45.008 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:48:45.134 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-09 10:48:45.161 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-09 10:49:02.805 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-09 10:49:02.863 INFO  c.I.I.ImShibernateApplication - Starting ImShibernateApplication using Java 17.0.2 with PID 9280 (C:\Users\LAP-10\Documents\IMShibernate\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\IMShibernate)
+2023-04-09 10:49:02.864 INFO  c.I.I.ImShibernateApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-09 10:49:04.023 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 10:49:04.090 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2023-04-09 10:49:05.174 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-09 10:49:05.200 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:49:05.203 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-09 10:49:05.203 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-09 10:49:05.440 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-09 10:49:05.441 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2511 ms
+2023-04-09 10:49:05.824 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-09 10:49:05.966 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-09 10:49:06.361 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-09 10:49:06.749 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-09 10:49:07.510 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32b112a1
+2023-04-09 10:49:07.516 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-09 10:49:07.841 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-09 10:49:09.883 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-09 10:49:09.906 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:49:10.865 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 10:49:12.728 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:49:12.778 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 10:49:12.802 INFO  c.I.I.ImShibernateApplication - Started ImShibernateApplication in 10.393 seconds (process running for 11.182)
+2023-04-09 10:50:54.004 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:50:54.007 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-09 10:50:54.018 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-09 10:51:01.933 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-09 10:51:01.982 INFO  c.I.I.ImShibernateApplication - Starting ImShibernateApplication using Java 17.0.2 with PID 15656 (C:\Users\LAP-10\Documents\IMShibernate\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\IMShibernate)
+2023-04-09 10:51:01.983 INFO  c.I.I.ImShibernateApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-09 10:51:03.021 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 10:51:03.080 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2023-04-09 10:51:04.159 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-09 10:51:04.178 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:51:04.180 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-09 10:51:04.181 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-09 10:51:04.423 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-09 10:51:04.424 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2378 ms
+2023-04-09 10:51:04.778 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-09 10:51:04.883 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-09 10:51:05.216 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-09 10:51:05.546 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-09 10:51:06.229 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@65753724
+2023-04-09 10:51:06.234 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-09 10:51:06.343 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-09 10:51:08.252 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-09 10:51:08.275 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:51:09.193 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 10:51:11.079 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:51:11.123 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 10:51:11.144 INFO  c.I.I.ImShibernateApplication - Started ImShibernateApplication in 9.713 seconds (process running for 10.628)
+2023-04-09 10:51:12.642 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 10:51:12.643 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-09 10:51:12.645 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-04-09 10:51:12.721 INFO  c.I.I.Service.StudentService - Getting all student
+2023-04-09 10:52:14.487 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:52:14.490 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-09 10:52:14.500 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-09 10:52:20.673 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-09 10:52:20.718 INFO  c.I.I.ImShibernateApplication - Starting ImShibernateApplication using Java 17.0.2 with PID 9548 (C:\Users\LAP-10\Documents\IMShibernate\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\IMShibernate)
+2023-04-09 10:52:20.719 INFO  c.I.I.ImShibernateApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-09 10:52:21.583 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 10:52:21.656 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2023-04-09 10:52:22.322 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-09 10:52:22.332 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:52:22.334 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-09 10:52:22.334 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-09 10:52:22.431 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-09 10:52:22.431 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1665 ms
+2023-04-09 10:52:22.608 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-09 10:52:22.666 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-09 10:52:22.977 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-09 10:52:23.315 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-09 10:52:24.072 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d66502
+2023-04-09 10:52:24.075 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-09 10:52:24.181 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-09 10:52:26.038 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-09 10:52:26.062 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:52:26.977 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 10:52:28.646 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:52:28.668 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 10:52:28.680 INFO  c.I.I.ImShibernateApplication - Started ImShibernateApplication in 8.313 seconds (process running for 8.966)
+2023-04-09 10:52:40.423 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 10:52:40.425 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-09 10:52:40.428 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-04-09 10:52:40.811 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.InstituteManagementSystemHibernate.IMShibernate.Model.Student com.InstituteManagementSystemHibernate.IMShibernate.Controller.StudentController.createStudent(com.InstituteManagementSystemHibernate.IMShibernate.Model.Student): [Field error in object 'student' on field 'Studentemail': rejected value [bara'ah]; codes [Pattern.student.Studentemail,Pattern.Studentemail,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.Studentemail,Studentemail]; arguments []; default message [Studentemail],[Ljakarta.validation.constraints.Pattern$Flag;@76048a78,^[a-z|A-Z|.]+@[a-z|A-Z]+\.[a-z|A-Z]{2,}$]; default message [must match "^[a-z|A-Z|.]+@[a-z|A-Z]+\.[a-z|A-Z]{2,}$"]] ]
+2023-04-09 10:52:58.622 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.InstituteManagementSystemHibernate.IMShibernate.Model.Student com.InstituteManagementSystemHibernate.IMShibernate.Controller.StudentController.createStudent(com.InstituteManagementSystemHibernate.IMShibernate.Model.Student): [Field error in object 'student' on field 'Studentemail': rejected value [bara'ah@gmail.com]; codes [Pattern.student.Studentemail,Pattern.Studentemail,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.Studentemail,Studentemail]; arguments []; default message [Studentemail],[Ljakarta.validation.constraints.Pattern$Flag;@76048a78,^[a-z|A-Z|.]+@[a-z|A-Z]+\.[a-z|A-Z]{2,}$]; default message [must match "^[a-z|A-Z|.]+@[a-z|A-Z]+\.[a-z|A-Z]{2,}$"]] ]
+2023-04-09 10:53:05.297 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:53:05.298 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-09 10:53:05.307 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-04-09 10:53:09.327 INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+2023-04-09 10:53:09.382 INFO  c.I.I.ImShibernateApplication - Starting ImShibernateApplication using Java 17.0.2 with PID 4896 (C:\Users\LAP-10\Documents\IMShibernate\target\classes started by LAP-10 in C:\Users\LAP-10\Documents\IMShibernate)
+2023-04-09 10:53:09.383 INFO  c.I.I.ImShibernateApplication - No active profile set, falling back to 1 default profile: "default"
+2023-04-09 10:53:10.478 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 10:53:10.540 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2023-04-09 10:53:11.330 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-04-09 10:53:11.348 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:53:11.350 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-04-09 10:53:11.351 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-04-09 10:53:11.573 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-04-09 10:53:11.574 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2138 ms
+2023-04-09 10:53:11.950 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-09 10:53:12.059 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-09 10:53:12.405 WARN  org.hibernate.orm.deprecation - HHH90000021: Encountered deprecated setting [javax.persistence.validation.mode], use [jakarta.persistence.validation.mode] instead
+2023-04-09 10:53:12.749 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-04-09 10:53:13.486 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c9a4f3b
+2023-04-09 10:53:13.491 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-04-09 10:53:13.616 INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-04-09 10:53:15.501 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-09 10:53:15.523 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 10:53:16.482 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 10:53:18.338 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 10:53:18.428 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 10:53:18.447 INFO  c.I.I.ImShibernateApplication - Started ImShibernateApplication in 9.42 seconds (process running for 10.287)
+2023-04-09 10:53:18.841 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 10:53:18.841 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-04-09 10:53:18.844 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-04-09 10:53:19.224 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.InstituteManagementSystemHibernate.IMShibernate.Model.Student com.InstituteManagementSystemHibernate.IMShibernate.Controller.StudentController.createStudent(com.InstituteManagementSystemHibernate.IMShibernate.Model.Student): [Field error in object 'student' on field 'Studentemail': rejected value [bara'ah@gmail.com]; codes [Pattern.student.Studentemail,Pattern.Studentemail,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [student.Studentemail,Studentemail]; arguments []; default message [Studentemail],[Ljakarta.validation.constraints.Pattern$Flag;@310cb78d,^[a-z|A-Z|.]+@[a-z|A-Z]+\.[a-z|A-Z]{2,}$]; default message [must match "^[a-z|A-Z|.]+@[a-z|A-Z]+\.[a-z|A-Z]{2,}$"]] ]
+2023-04-09 10:53:26.943 INFO  c.I.I.Service.StudentService - Getting all student
+2023-04-09 10:53:36.766 INFO  c.I.I.Service.StudentService - Created student with id: 52
+2023-04-09 13:17:34.910 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=35m49s521ms453µs900ns).
+2023-04-09 13:25:34.567 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m59s527ms47µs800ns).

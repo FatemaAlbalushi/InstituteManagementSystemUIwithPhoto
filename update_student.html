@@ -1,0 +1,108 @@
+<!-- update_student.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMS - Update Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <header>
+      <div class="container">
+        <a href="aboutUs.html" class="logo"><img src="https://th.bing.com/th/id/OIP.0RW8ONP2574Wo8QaIFGFzQHaGE?pid=ImgDet&rs=1" alt="IMS Logo" /></a>
+        <nav>
+          <ul>
+            <li><a href="main.html">Home </a></li>
+            <li class="active"><a href="#">Students</a>
+              <ul>
+                <li><a href="create_student.html">Create Student</a></li>
+                <li><a href="read_student.html">Read Student</a></li>
+                <li><a href="update_student.html">Update Student</a></li>
+                <li><a href="delete_student.html">Delete Student</a></li>
+                <li><a href="viewAllstudent.html">View Student</a></li>
+              </ul>
+            </li>
+            <li><a href="#">satffs</a>
+              <ul>
+                <li class="active"><a href="create_staff.html">Create Satff</a></li>
+                <li><a href="read_staff.html">Read Satff</a></li>
+                <li><a href="update_staff.html">Update Satff</a></li>
+                <li><a href="delete_staff.html">Delete Satff</a></li>
+                <li><a href="viewAllstaff.html">View Staff</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="#" class="logout">Log out </a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </header>
+
+  <main>
+    <section id="update-student">
+      <h2>Update Student</h2>
+      <form id= "updatestudentForm">
+        <label for="updatestudent-id">Student ID:</label>
+        <input type="text" id="updatestudent-id" name="updatestudent-id" required>
+
+        <label for="name"> Name:</label>
+        <input type="text" id="updatestudentname" name="updatestudentname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="updatestudentemail" name="updatestudentemail" required>
+
+        <button type="submit">Update</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    const storedUsername = localStorage.getItem("username");
+    const storedPassword = localStorage.getItem("password");
+    document.getElementById("updatestudentForm").addEventListener("submit",(event)=>{
+      event.preventDefault();
+      let id = document.querySelector('#updatestudent-id').value;
+      let name = document.querySelector('#updatestudentname').value;
+      let email = document.querySelector('#updatestudentemail').value;
+      
+  
+      let url = `http://localhost:8080/api/student/${id}`;
+  
+      let reqConfig = {
+        method: "PUT",
+        headers: {"Content-Type": "application/json;charset=UTF-8",
+        'Authorization': 'Basic ' + btoa(storedUsername + ":" + storedPassword)},
+        body: JSON.stringify({Studentname: name, Studentemail: email})
+      }
+  
+      fetch(url, reqConfig)
+      .then((response) => {
+        if (response.ok) {
+            alert(`Staff Updated successfully.`);
+          } else {
+            alert (`Failed to Updated Staff.`);
+          }
+      })
+      .then((parsedResponse) => {console.log(parsedResponse);})
+    });
+
+    document.querySelector('.logout').addEventListener('click', function(event) {
+      event.preventDefault();
+      alert(`Are you sure you went to logout?.`);
+      if(alert.apply){
+        localStorage.removeItem("username");
+       localStorage.removeItem("password");
+       window.location.href = 'index.html';
+      }
+});
+  </script>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Institute Management Service</p>
+    </div>
+  </footer>
+</body>
+</html>
