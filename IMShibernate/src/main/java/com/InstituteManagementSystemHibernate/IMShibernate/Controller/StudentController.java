@@ -6,12 +6,17 @@ import jakarta.validation.Valid;
 import org.apache.commons.io.FileUtils;
 import org.aspectj.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,6 +47,23 @@ public class StudentController {
     @GetMapping(path = "/{id}")
     public Optional<Student> getStudent(@PathVariable(name="id") int id){
         return studentService.getSpecificStudentInfo(id);
+    }
+
+    @GetMapping(path = "/{id}/getImage")
+    public ResponseEntity<byte[]> getStudentWithImage(@PathVariable(name = "id") int id) throws IOException {
+        Optional<Student> optionalStudent = studentService.getSpecificStudentInfo(id);
+
+        if(optionalStudent.isPresent()){
+            Student currStudent = optionalStudent.get();
+            String filename = String.format("%d_%s.jpg", currStudent.Stusentid, currStudent.Studentname);
+            File imageFile = new File("./src/main/resources/static/student_images/" + filename);
+            HttpHeaders httpHeaders = new HttpHeaders();
+            httpHeaders.setContentType(MediaType.IMAGE_JPEG);
+            return new ResponseEntity<>(Files.readAllBytes(imageFile.toPath()), httpHeaders, HttpStatus.OK);
+        }
+        else {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Student with ID %d, not found !", id));
+        }
     }
 
     /**

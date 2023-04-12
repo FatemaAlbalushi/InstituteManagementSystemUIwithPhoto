@@ -56,6 +56,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Image</th>
           </tr>
         </thead>
         <tbody>
@@ -64,46 +65,76 @@
 
     </section>
   </main>
-
   <script>
-    const storedUsername = localStorage.getItem("username");
-    const storedPassword = localStorage.getItem("password");
-    document.getElementById("readstudentForm").addEventListener("submit",(event)=>{
-      event.preventDefault();
-      let id = document.querySelector('#readstudent-id').value;
+const storedUsername = localStorage.getItem("username");
+const storedPassword = localStorage.getItem("password");
 
-      let url = `http://localhost:8080/api/student/${id}`;
-      let table = document.querySelector("#studentTable tbody");
-         table.innerHTML = '';
+document.getElementById("readstudentForm").addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-         let reqCongig = {
-          method: "GET",
-          headers : {
-      "Content-Type" :"application/json;charset=UTF-8" ,
-      'Authorization': 'Basic ' + btoa(storedUsername + ":" + storedPassword)},
-}
+  let id = document.querySelector('#readstudent-id').value;
+  const table = document.querySelector("#studentTable tbody");
+  table.innerHTML = '';
 
-    fetch(url,reqCongig)
-      .then((response) => {return response.json();})
-      .then(data => {
+  const requestConfig = {
+    method: "GET",
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'Basic ' + btoa(storedUsername + ":" + storedPassword)
+    }
+  }
 
-        console.log(data);
-      const row = document.createElement('tr');
+  try {
+    // Perform API request to retrieve student details based on student ID
+    const response = await fetch(`http://localhost:8080/api/student/${id}`, requestConfig);
+    if (response.ok) {
+      const student = await response.json();
+
+      // Handle the response and update the table with student details
       const idCell = document.createElement('td');
+      idCell.textContent = student.Stusentid;
       const nameCell = document.createElement('td');
+      nameCell.textContent = student.Studentname;
       const emailCell = document.createElement('td');
-      idCell.textContent = data.Stusentid;
-      nameCell.textContent = data.Studentname;
-      emailCell.textContent = data.Studentemail;
+      emailCell.textContent = student.Studentemail;
+
+      // Create table row and append cells
+      const row = document.createElement('tr');
       row.appendChild(idCell);
       row.appendChild(nameCell);
       row.appendChild(emailCell);
       table.appendChild(row);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
-    });
+
+      const requestConfigForImage = {
+        method: "GET",
+        headers: {
+          'Authorization': 'Basic ' + btoa(storedUsername + ":" + storedPassword)
+        }
+      }
+
+      // Perform API request to retrieve student image based on student ID
+      const imageResponse = await fetch(`http://localhost:8080/api/student/${id}/getImage`, requestConfigForImage);
+      if (imageResponse.ok) {
+        const blobResponse = await imageResponse.blob();
+        const imageURL = URL.createObjectURL(blobResponse);
+        const imageElem = document.createElement("img");
+        imageElem.src = imageURL;
+        const imageCell = document.createElement('td');
+        imageElem.width = 100; // Set width for image element
+        imageElem.height = 100; // Set height for image element
+        imageCell.appendChild(imageElem);
+        row.appendChild(imageCell);
+      } else {
+        console.error('Failed to fetch student image');
+      }
+    } else {
+      console.error('Failed to fetch student details');
+    }
+  } catch (error) {
+    console.error(error);
+  }
+});
+
     document.querySelector('.logout').addEventListener('click', function(event) {
       event.preventDefault();
       alert(`Are you sure you went to logout?.`);
@@ -114,7 +145,6 @@
       }
 });
 
-  
   </script>
   <footer>
     <div class="container">
